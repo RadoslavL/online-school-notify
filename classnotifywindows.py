@@ -28,6 +28,8 @@ while True:
         print("Seventh class")
         winsound.PlaySound(beep, winsound.SND_FILENAME)
         break
+    elif output.hour == 18 and output.minute > 40 or output.hour > 18:
+        break
     time.sleep(1)
     print("Loop", looptimes, "Completed")
 print("Finished all seven classes for today!")
